@@ -12,3 +12,13 @@
 * #FFFFFF - white
 *
 */
+
+.header h4{
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.intro {
+  background-image: url("sample.png") no-repeat top center fixed;  
+}
+

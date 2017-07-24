@@ -21,46 +21,71 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/jquery.fullPage.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="js/scrolloverflow.js"></script>
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function() {
+			$('#base').fullpage({
+				fitToSection: false,
+				scrolloverflow: true,
+				sectionsColor: ['#221e1d', '#ECEAE0', '#63AA9C', '#E9633B', '#221e1d']
+			});
+		});
+  </script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--link rel="icon" type="image/png" href="images/favicon.png"-->
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
 <body>
-
+  <div class="header u-full-width u-max-full-width container">
+    <div class="title">&lt;Under Construction&gt;</div>
+  </div>
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="header u-full-width u-max-full-width container">
-	<h4><a href="#">Header</a></h4>
-  </div>
-  <div class="u-full-width u-max-full-width intro">
-	<div class="container">
-	  <div>Hello World</div>
-	  <div>
-		Some random text
-	  </div>
-	  <div>
-		Add some random buttons
-	  </div>
-	</div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="one-third column">
-        One content
-      </div>
-	  <div class="one-third column">
-        Second content
-      </div>
-	  <div class="one-third column">
-        Third content
-      </div>
-    </div>
-  </div>
-  <div class="footer u-full-width">
-	Insert footer here.
+  <div class="base" id="base">
+		<div class="section active" id="welcome">
+			<div class="container">
+				<h2>Hello World</h2>
+				<h5>I'm BK Santiago, Software Developer based in the Philippines. Currently employed, but accepts freelance works from time to time.</h5>
+				<a class="button button-primary" href="#">My works</a>
+			</div>
+		</div>
+		<div class="section inverted" id="about">
+			<div class="container">
+				<div class="row">
+					<div class="one-half column">
+						<h4>About Me</h4>
+						<p>I develop various kind of softwares, I can using different technologies for desktop, web and mobile applications.
+						</p>
+						<p>I can analyze, suggest and provide solutions that will suit your needs. I am a team player but can work alone.
+						</p>   
+					</div>
+					<div class="one-half column">
+						<h4>What I do</h4>
+						<p>
+							I specialize in creating web application using AngularJS/NodeJS or JavaEE.</p>
+						<p>I can also create native android or various desktop applications either using java or native app via .NET.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section" id="works">
+	    <div class="slide active"><h1>Simple Demo</h1></div>
+	    <div class="slide"><h1>Only text</h1></div>
+	    <div class="slide"><h1>And text</h1></div>
+	    <div class="slide"><h1>And more text</h1></div>
+		</div>
+		<div class="section" id="contact"><h1>Contact</h1></div>
+		<div class="section fp-auto-height" id="footer"><h1>Footer</h1></div>
   </div>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->

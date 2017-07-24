@@ -13,12 +13,38 @@
 *
 */
 
-.header h4{
-  margin-top: 1rem;
-  margin-left: 2rem;
+body {
+  background-color: #221e1d;
+  color: #ECEAE0;
 }
 
-.intro {
-  background-image: url("sample.png") no-repeat top center fixed;  
+.inverted {
+	color: #221e1d;
 }
 
+.base {
+  background: url("../images/intro-bg.jpg") no-repeat top center fixed;  
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	background-color: rgba(34, 30, 29, .70);
+}
+
+.title {
+	font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem;
+	padding: 0.5rem 0rem;
+	display: inline-block;
+}
+
+p {
+	font-size: 1.7rem;
+}
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .title {
+    padding: 1.1rem; }
+}

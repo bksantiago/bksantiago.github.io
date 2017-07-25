@@ -1,0 +1,21 @@
+{
+  "name": "bksantiago",
+  "version": "1.0.0",
+  "description": "BK Santiago Personal page",
+  "main": "index.html",
+  "dependencies": {
+    "fullpage.js": "^2.9.4"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^1.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bksantiago/bksantiago.github.io"
+  },
+  "author": "BK Santiago",
+  "license": "NA",
+  "homepage": "https://bksantiago.github.io"
+}
